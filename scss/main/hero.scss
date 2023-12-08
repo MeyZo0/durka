@@ -1,0 +1,55 @@
+.hero{
+
+    &__logo{
+        max-width: 482px;
+    }
+    &__logo_black{
+        color: #3E3E3E;
+        font-family: 'Roboto',sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 145.833%;
+    }
+    &__logo_blue{
+        color: #40A3F8;
+        font-family: 'Roboto', sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 145.833%;
+    }
+    &__p{
+        max-width: 460px;
+        color: rgba(117, 117, 117, 0.46);
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    &__button{
+        outline: none;
+        border-radius: 4px;
+        background: #40A3F8;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        color: $color_4;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 187.5%;
+        letter-spacing: 0.96px;
+        cursor: pointer;
+        padding: 10px 24px;
+        margin-top: 30px;
+        &:hover {
+            background: #188CE8;
+            transition: 300ms;
+        }
+        &:focus {
+            background: #188CE8;
+            transition: 300ms;
+	}
+    }
+
+}

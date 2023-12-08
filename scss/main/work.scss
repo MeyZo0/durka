@@ -1,0 +1,41 @@
+.work{
+    background-color: #ABD8FF, #71FFDDA6;
+    text-align: left;
+    &__title{
+        color: #3E3E3E;
+        font-family: 'Roboto', sans-serif;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 166.667%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__ul{
+        display: flex;
+        gap: 105px
+    }
+    &__list{
+        text-align: center;
+    }
+    &__h2{
+        color: #3D3D3F;
+        font-family: 'Roboto',sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%;
+    }
+    &__p{
+        color: rgba(0, 0, 0, 0.50);
+        text-align: center;
+        font-family: 'Roboto',sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 166.667%;
+    }
+    &__svg{
+        
+    }
+}

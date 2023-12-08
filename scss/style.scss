@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+
+&::before {
+	box-sizing: border-box;
+}
+&::after {
+	box-sizing: border-box;
+}
+}
+ul, a, h1, h2, h3, h4, p, address{
+    list-style: none;
+    text-decoration: none;
+    font-style: normal;
+    padding: 0px;
+    margin: 0px;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.body{
+    background: linear-gradient(180deg, rgba(239, 239, 239, 0.60) 0%, rgba(239, 239, 239, 0.10) 100%);
+}
+.flex{
+    display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	gap: 30px;
+}
+.facebook{
+    background-color: #4D77CF;
+}
+.X{
+    background-color: #1DA1F2;
+}
+.linkedin{
+    background-color: #0077B5;
+}
+
+@import "./modern-normalize.css";
+@import "./warp.scss";
+@import "./container.scss";
+@import "./main/header.scss";
+@import "./main/hero.scss";
+@import "./main/work.scss";
+@import "./main/specialist.scss";
+@import "./main/team.scss";
+

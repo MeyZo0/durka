@@ -1,0 +1,38 @@
+.header {
+    padding-top: 29px;
+    padding-bottom: 29px;
+    &__logo{
+    margin-right: auto;
+    color: $color_2;
+    font-family: 'Rubik', sans-serif;
+    font-size: 31.635px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 148.57%;
+    letter-spacing: 1px;
+    }
+    &__ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    &__link{
+    color: #6E5F5F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    opacity: 0.3;
+    &:hover{
+        color: $color_8;
+        opacity: 1;
+        transition: 300ms;
+    }
+    &:focus{
+        color: $color_8;
+        opacity: 1;
+        transition: 300ms;
+    }
+    }
+}

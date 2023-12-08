@@ -1,0 +1,16 @@
+.work__title {
+  color: #3E3E3E;
+  font-family: "Roboto", sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 166.667%;
+}
+.work__h2 {
+  color: #3D3D3F;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+}
