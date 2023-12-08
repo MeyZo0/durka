@@ -1,6 +1,7 @@
 .work{
     background-color: #ABD8FF, #71FFDDA6;
     text-align: left;
+    margin-bottom: 71px;
     &__title{
         color: #3E3E3E;
         font-family: 'Roboto', sans-serif;
@@ -35,7 +36,14 @@
         font-weight: 400;
         line-height: 166.667%;
     }
-    &__svg{
+    &__img{
+        display: flex;
+        justify-content: center;
         
+    }
+    &__pictures{
+        display: flex;
+        padding: 16px;
+        border-radius: 50%;
     }
 }

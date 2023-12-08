@@ -42,6 +42,18 @@ img {
   gap: 30px;
 }
 
+.search {
+  background-color: rgba(56, 175, 255, 0.1);
+}
+
+.calendar {
+  background-color: rgba(255, 180, 26, 0.12);
+}
+
+.med-kid {
+  background-color: rgba(99, 203, 254, 0.65);
+}
+
 .facebook {
   background-color: #4D77CF;
 }
@@ -186,6 +198,7 @@ img {
 .work {
   background-color: #ABD8FF, rgba(113, 255, 221, 0.6509803922);
   text-align: left;
+  margin-bottom: 71px;
 }
 .work__title {
   color: #3E3E3E;
@@ -223,6 +236,22 @@ img {
   font-weight: 400;
   line-height: 166.667%;
 }
+.work__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.work__pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px;
+  border-radius: 50%;
+}
+
 .specialist__right {
   margin-left: 105px;
 }
