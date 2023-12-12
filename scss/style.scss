@@ -1,3 +1,13 @@
+@import "./modern-normalize.css";
+@import "./warp.scss";
+@import "./container.scss";
+@import "./main/header.scss";
+@import "./main/hero.scss";
+@import "./main/work.scss";
+@import "./main/specialist.scss";
+@import "./main/team.scss";
+@import "./main/footer.scss";
+
 * {
 	box-sizing: border-box;
 
@@ -21,7 +31,8 @@ img {
 	height: auto;
 }
 .body{
-    background: linear-gradient(180deg, rgba(239, 239, 239, 0.60) 0%, rgba(239, 239, 239, 0.10) 100%);
+    background: url(../images/background.jpg), lightgray 100% / cover no-repeat;
+    backdrop-filter: blur(28332776px);
 }
 .flex{
     display: flex;
@@ -47,13 +58,11 @@ img {
 .linkedin{
     background-color: #0077B5;
 }
+.left{
+    margin-right: 114px;
+}
+.right{
+    margin-right: 152px;
+}
 
-@import "./modern-normalize.css";
-@import "./warp.scss";
-@import "./container.scss";
-@import "./main/header.scss";
-@import "./main/hero.scss";
-@import "./main/work.scss";
-@import "./main/specialist.scss";
-@import "./main/team.scss";
 

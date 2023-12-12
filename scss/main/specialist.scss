@@ -1,6 +1,11 @@
 .specialist{
+    &__ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     &__right{
-        margin-left: 105px;
+        margin-left: 110px;
     }
     &__title{
         max-width: 494px;
@@ -11,9 +16,10 @@
         font-weight: 500;
         line-height: normal;
         letter-spacing: 0.84px;
+        margin-bottom: 24px;
     }
     &__p{
-        max-width: 506px;
+        max-width: 507px;
         color: rgba(61, 61, 63, 0.70);
         font-family: 'Roboto',sans-serif;
         font-size: 18px;
@@ -21,5 +27,23 @@
         font-weight: 400;
         line-height: 166.667%;
         letter-spacing: 0.36px;
+        margin-bottom: 14px;
+    }
+    &__decoration{
+        color: #3D3D3F;
+        font-family: 'Roboto',sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 187.5%;
+        letter-spacing: 0.32px;
+    }
+    &__icons{
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        &:not(:last-child){
+            margin-bottom: 14px;
+        } 
     }
 }
