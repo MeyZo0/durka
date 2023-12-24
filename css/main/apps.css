@@ -1,0 +1,31 @@
+.apps {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.apps__title {
+  color: #3D3D3F;
+  font-family: "Roboto", sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+  letter-spacing: 0.84px;
+  max-width: 500px;
+  height: 118px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.apps__p {
+  color: rgba(61, 61, 63, 0.7);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 166.667%;
+  letter-spacing: 0.36px;
+}
+.apps__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

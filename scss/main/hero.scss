@@ -3,7 +3,7 @@
     margin-top: 172px;
     margin-bottom: 72px;
     &__logo{
-        max-width: 600px;
+        max-width: 660px;
         margin-bottom: 31px;
     }
     &__logo_black{
@@ -57,5 +57,29 @@
     }
     &__ul{
         display: flex;
+    }
+    &__svg1{
+        position: absolute;
+        left: 750px;
+        top: 300px;
+        background-color: black;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    &__svg2{
+        position: absolute;
+        background-color: black;
+        top: 500px;
+        left: 700px;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    &__svg3{
+        position: absolute;
+        top: 300px;
+        right: 170px;
+        background-color: black;
+        border-radius: 50%;
+        padding: 10px;
     }
 }

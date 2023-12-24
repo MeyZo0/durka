@@ -49,7 +49,12 @@
                     <button class="hero__button">Find your doctor</button>
                 </li>
                 <li class="hero__list">
-                    <img class="hero__img" src="./images/hero__woman.png">
+                    <div class="hero__pos">
+                        <img class="hero__img" width="1000" src="./images/hero__woman.png">
+                        <img class="hero__svg1" src="./images/ALO.png">
+                        <img class="hero__svg2" src="./images/mes.png">
+                        <img class="hero__svg3" src="./images/video-camera.png">
+                    </div>
                 </li>
             </ul>
         </div> 
@@ -114,36 +119,38 @@
         <div class="container">
             <h1 class="service__title">Our Service</h1>
             <p class="service__description">Our doctors have high qualified skills and are guaranteed to help you recover from your disease.</p>
-            <div class="service__slaider">
-                <svg class="service__icon" width="80" height="80"><use href="./images/icons.svg#icon_leh"></use></svg>
-                <h2 class="service__h2">Cardiology</h2>
-                <p class="service__p">Our cardiologists are skilled at the diagnosing and treating diseases of the cardiovascular system.</p>
-            </div>
-            <div class="service__slaider">
-                <svg class="service__icon" width="80" height="80"><use></use></svg>
-                <h2 class="service__h2">Pulmonology</h2>
-                <p class="service__p">Our Pulmonologist are skilled at diagnosing treating diseases of the Pulmonology system.</p>
-            </div>
-            <!-- <div class="service__slaider">
-                <svg class="service__icon" width="80" height="80"><use ></use></svg>
-                <h2 class="service__h2">Medicine</h2>
-                <p class="service__p">Our medcine doctor are skilled at diagnosing treating diseases of the latest medicne system.</p>
-            </div> -->
-            <!-- <div class="service__slaider">
-                <svg class="service__icon" width="80" height="80"><use></use></svg>
-                <h2 class="service__h2">Cardiology</h2>
-                <p class="service__p">Our cardiologists are skilled at the diagnosing and treating diseases of the cardiovascular system.</p>
-            </div>
-            <div class="service__slaider">
-                <svg class="service__icon" width="80" height="80"><use></use></svg>
-                <h2 class="service__h2">Cardiology</h2>
-                <p class="service__p">Our cardiologists are skilled at the diagnosing and treating diseases of the cardiovascular system.</p>
-            </div>
-            <div class="service__slaider">
-                <svg class="service__icon" width="80" height="80"><use></use></svg>
-                <h2 class="service__h2">Cardiology</h2>
-                <p class="service__p">Our cardiologists are skilled at the diagnosing and treating diseases of the cardiovascular system.</p>
-            </div> -->
+            <ul class="service__slaider">
+                <li class="service__list">
+                    <img class="service__img" src="./images/heart.png">
+                    <h2 class="service__h2">Cardiology</h2>
+                    <p class="service__p">Our cardiologists are skilled at the diagnosing and treating diseases of the cardiovascular system.</p>
+                </li>
+                <li class="service__list">
+                    <img class="service__img" src="./images/leg.png">
+                    <h2 class="service__h2">Pulmonology</h2>
+                    <p class="service__p">Our Pulmonologist are skilled at diagnosing treating diseases of the Pulmonology system.</p>
+                </li>
+                <li class="service__list">
+                    <img class="service__img" src="./images/pigul.png">
+                    <h2 class="service__h2">Medicine</h2>
+                    <p class="service__p">Our medcine doctor are skilled at diagnosing treating diseases of the latest medicne system.</p>
+                </div>
+                <!-- <li class="service__list">
+                    <svg class="service__icon" width="80" height="80"><use></use></svg>
+                    <h2 class="service__h2">Cardiology</h2>
+                    <p class="service__p">Our cardiologists are skilled at the diagnosing and treating diseases of the cardiovascular system.</p>
+                </div>
+                <li class="service__list">
+                    <svg class="service__icon" width="80" height="80"><use></use></svg>
+                    <h2 class="service__h2">Cardiology</h2>
+                    <p class="service__p">Our cardiologists are skilled at the diagnosing and treating diseases of the cardiovascular system.</p>
+                </div>
+                <li class="service__list">
+                    <svg class="service__icon" width="80" height="80"><use></use></svg>
+                    <h2 class="service__h2">Cardiology</h2>
+                    <p class="service__p">Our cardiologists are skilled at the diagnosing and treating diseases of the cardiovascular system.</p>
+                </li> -->
+            </ul>
         </div>
     </section>
 
@@ -239,19 +246,24 @@
             </ul>
     </div>
     </section>
-    <section class="apps">
+    <section class="apps">  
         <div class="container">
-            <div class="apps__phone">
-
-            </div>
-            <h2 class="apps__title">Mobile apps are available Get HealthCare for free!</h2>
-            <p class="apps__p">Get on-demand access to a doctor on your phone with the free HealthCare mobile app. Download and register on our app for free and feel safe for all your family</p>
-            <ul class="apps__svg">
+            <ul class="apps__ul">
                 <li class="apps__list">
-
+                    <img class="apps__img" width="1800" src="./images/iphone12.png" alt="123">
+                    <img class="apps__imeg" width="160" src="./images/Home 1.png" alt="">
                 </li>
                 <li class="apps__list">
-                <a class="apps_link" href="#"><svg class="apps__icon" width="100px" height="46px"><use href="./images/icons.svg#icon-StoreApp-Store"></use></svg></a>
+                    <h2 class="apps__title">Mobile apps are available Get HealthCare for free!</h2>
+                    <p class="apps__p">Get on-demand access to a doctor on your phone with the free HealthCare mobile app. Download and register on our app for free and feel safe for all your family</p>
+                    <ul class="apps__svg">
+                        <li class="apps__li">
+                            <a class="apps__google" href="#"><img class="apps__photo" width="156px" src="./images/Google_Play_Store_badge_EN.svg.png"></a>
+                        </li>
+                        <li class="apps__li">
+                            <a class="apps__link" href="#"><img class="apps__photo" width="160px" src="./images/Download_on_the_App_Store_Badge.svg.png"></a>
+                        </li>
+                    </ul>  
                 </li>
             </ul>
         </div>
