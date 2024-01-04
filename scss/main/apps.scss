@@ -1,5 +1,4 @@
 .apps{
-    padding-top: 120px;
     padding-bottom: 120px;
     &__title{
         color: #3D3D3F;
@@ -33,9 +32,12 @@
         gap: 13px;
         align-items: center;
     }
+    &__pictures{
+        position: relative;
+    }
     &__imeg{
         position: absolute;
-        left: 338px;
-        bottom: 581px;
+        left: 218px;
+        bottom: 150px;
     }
 }

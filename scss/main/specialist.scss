@@ -7,6 +7,12 @@
     &__right{
         margin-left: 110px;
     }
+    &__left{
+        position: relative;
+        padding-right: 10px;
+        background-image: linear-gradient(transparent 50%, #40A3F8 65%);
+        border-radius: 35%;
+    }
     &__title{
         max-width: 494px;
         color: #3D3D3F;
@@ -45,5 +51,109 @@
         &:not(:last-child){
             margin-bottom: 14px;
         } 
+    }
+    &__imgdr{
+        background-color:#FFE4C4;
+        border-radius: 50%;
+    }
+    &__dr{
+        position: absolute;
+        top: 260px; 
+        padding: 20px 16px;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.04);
+    }
+    &__uldrtop{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+    &__titledr{
+        color:#3D3D3F;
+        font-family: 'Poppins',sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%;
+    }
+    &__pdr{
+        color: rgba(61, 61, 63, 0.40);
+        font-family: 'Poppins',sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    &__uldr{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        text-align: center;
+    }
+    &__ptop{
+        color: #A0A2B3;
+        font-family: 'SF Pro',sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        margin-bottom: 5px;
+    }
+    &__pbottom{
+        color: #636481;
+        font-family: 'Poppins',sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+    &__city{
+        color:#3D3D3F;
+        font-family: 'Poppins',sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.24px;
+    }
+    &__lii{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    &__woman{
+        position: absolute;
+        top: 130px;
+        right: 0px;
+        width: 230px;
+        background-color: white;
+        padding: 13px 15px;
+        border-radius: 6px; 
+        box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.05);
+    }
+    &__ulw{
+        display: flex;
+        gap: 15px;
+    }
+    &__liw{
+        margin-top: 5px;
+    }
+    &__img:not(:last-child){
+        margin-bottom: 10px;
+    }
+    &__love{
+        position: absolute;
+        top:-45px;
+        right: 80px;
+    }
+    &__elips{
+        position: absolute;
+        top: 100px;
+        left: 50px;
     }
 }

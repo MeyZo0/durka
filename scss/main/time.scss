@@ -1,0 +1,40 @@
+.time{
+    margin-bottom: 72px;
+
+    &__ul{
+        background-image: url(/images/back_time1.png);
+        display: flex;
+        border-radius: 12px;
+        background-color: #40A3F8;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__back{
+        width: auto;
+    }
+    &__title{
+        max-width: 400px;
+        color: #FFF;
+        font-family: 'Roboto',sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-left: 100px;
+        margin-bottom: 20px;
+    }
+    &__button{
+        border-radius: 4px;
+        background: white;
+        color: #40A3F8;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 187.5%;
+        letter-spacing: 0.96px;
+        cursor: pointer;
+        padding: 10px 13px;
+        margin-left: 100px;
+    }
+}
