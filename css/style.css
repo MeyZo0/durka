@@ -1459,7 +1459,7 @@
   margin-bottom: 72px;
 }
 .time__ul {
-  background-image: url(/images/back_time1.png);
+  background-image: url(./images/back_time1.png);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
