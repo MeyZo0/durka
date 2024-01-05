@@ -39,32 +39,28 @@
                 </ul>
             </nav>
 
-            <button class="mobile__button" type="button" data-menu-button aria-expanded="false">
-                <svg class="mobile__button-close" width="19" height="19">
-                  <use href="./images/icons.svg#menu_close"></use>
-                </svg>
-                <svg class="mobile__button-open" width="24" height="16">
-                  <use href="./images/icons.svg#icon_menu"></use>
-                </svg>
-              </button>
-            </div>
-            <div class="mobile no-scroll" data-menu>
-              <nav class="mobile__nav">
-                <ul class="mobile__nav-list">
-                  <li class="mobile__nav-item">
-                    <a href="#" class="mobile__nav-link">Home</a>
-                  </li>
-                  <li class="mobile__nav-item">
-                    <a href="#specialist" class="mobile__nav-link">About</a>
-                  </li>
-                  <li class="mobile__nav-item">
-                    <a href="#comment" class="mobile__nav-link">Article</a>
-                  </li>
-                  <li class="mobile__nav-item">
-                    <a href="#service" class="mobile__nav-link">Services</a>
-                  </li>
+            <div class="section_menu menu" menu>   
+                <ul class="menu__list">
+                    <li class="menu__li">
+                        <a class="menu__link" href="#hero">Home</a>
+                    </li>
+                    <li class="menu__li">
+                        <a class="menu__link" href="#specialist">About</a>
+                    </li>
+                    <li class="menu__li">
+                        <a class="menu__link" href="#comment">Article</a>
+                    </li>
+                    <li class="menu__li">
+                        <a class="menu__link" href="#service">Services</a>
+                    </li>
+                    <li class="menu__li">
+                        <a class="menu__link" href="#team">Doctors</a>
+                    </li>
                 </ul>
-              </nav>
+            </div>
+            <button type="button" class="burger burger_close" open-menu>
+                <span></span>
+            </button>
         </div>
     </header>
     <main>
