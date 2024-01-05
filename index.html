@@ -15,10 +15,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Durka</title>
 </head>
 <body class="body">
-    <header class="header">
+    <header class="header" id="header">
         <div class="container__header">
             <a class="header__logo" href="#">HEALTCARE</a>
             <nav>
@@ -27,13 +28,13 @@
                         <a class="header__link" href="#">Home</a>
                     </li>
                     <li class="header__list">
-                        <a class="header__link" href="#">About</a>
+                        <a class="header__link" href="#specialist">About</a>
                     </li>
                     <li class="header__list">
-                        <a class="header__link" href="#">Article</a>
+                        <a class="header__link" href="#comment">Article</a>
                     </li>
                     <li class="header__list">
-                        <a class="header__link" href="#">Services</a>    
+                        <a class="header__link" href="#service">Services</a>    
                     </li>
                 </ul>
             </nav>
@@ -41,7 +42,7 @@
     </header>
     <main>
 
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container">
                 <ul class="hero__ul">
                     <li class="hero__list">
@@ -51,10 +52,11 @@
                     </li>
                     <li class="hero__list">
                         <div class="hero__pos">
-                            <img class="hero__img" width="800" height="0" src="./images/hero__woman.png">
-                            <img class="hero__svg1" src="./images/ALO.png">
-                            <img class="hero__svg2" src="./images/mes.png">
-                            <img class="hero__svg3" src="./images/video-camera.png">
+                            <img class="hero__img" width="1000" src="./images/hero__woman.png">
+                            <img class="hero__back" width="550" src="/images/back_шлюха.png" alt="2">
+                            <img class="hero__svg1" width="60" src="./images/ALO.png">
+                            <img class="hero__svg2" width="60" src="./images/mes.png">
+                            <img class="hero__svg3" width="60" src="./images/video-camera.png">
                                 <ul class="hero__doc">
                                     <li class="hero__li">
                                         <img class="hero__imgg" src="./images/hero__doc.png" alt="4">
@@ -65,13 +67,20 @@
                                         <img class="hero__pictures" src="./images/Rectangle2.png">
                                     </li>
                                 </ul>
+                                <ul class="hero__ulheart">
+                                    <li class="hero__liheart">
+                                        <img class="hero__imgheart" src="/images/heart2.0.png" alt="heart">
+                                        <p class="hero__para">2500+</p>
+                                        <p class="hero__pheart">Happy Patients</p>
+                                    </li>
+                                </ul>
                         </div>
                     </li>
                 </ul>
             </div> 
         </section>
 
-        <section class="work">
+        <section class="work" id="work">
         <div class="container">
             <h1 class="work__title">3 Easy Steps and Get Your Solution</h1>
             <ul class="work__ul">
@@ -100,7 +109,7 @@
         </div>
         </section>
 
-        <section class="specialist">
+        <section class="specialist" id="specialist">
             <div class="container">
                 <ul class="specialist__ul">
                     <li class="specialist__left">
@@ -169,46 +178,44 @@
             </div>
         </section>
 
-        <section class="service">
+        <section class="service" id="service">
             <div class="container">
                 <h1 class="service__title">Our Service</h1>
                 <p class="service__description">Our doctors have high qualified skills and are guaranteed to help you recover from your disease.</p>
-                <ul class="service__slaider">
-                    <li class="service__list">
-                        <img class="service__img" src="./images/heart.png">
-                        <h2 class="service__h2">Cardiology</h2>
-                        <p class="service__p">Our cardiologists are skilled at the diagnosing and treating diseases of the cardiovascular system.</p>
-                    </li>
-                    <li class="service__list">
-                        <img class="service__img" src="./images/leg.png">
-                        <h2 class="service__h2">Pulmonology</h2>
-                        <p class="service__p">Our Pulmonologist are skilled at diagnosing treating diseases of the Pulmonology system.</p>
-                    </li>
-                    <li class="service__list">
-                        <img class="service__img" src="./images/pigul.png">
-                        <h2 class="service__h2">Medicine</h2>
-                        <p class="service__p">Our medcine doctor are skilled at diagnosing treating diseases of the latest medicne system.</p>
-                    </div>
-                    <!-- <li class="service__list">
-                        <svg class="service__icon" width="80" height="80"><use></use></svg>
-                        <h2 class="service__h2">Cardiology</h2>
-                        <p class="service__p">Our cardiologists are skilled at the diagnosing and treating diseases of the cardiovascular system.</p>
-                    </div>
-                    <li class="service__list">
-                        <svg class="service__icon" width="80" height="80"><use></use></svg>
-                        <h2 class="service__h2">Cardiology</h2>
-                        <p class="service__p">Our cardiologists are skilled at the diagnosing and treating diseases of the cardiovascular system.</p>
-                    </div>
-                    <li class="service__list">
-                        <svg class="service__icon" width="80" height="80"><use></use></svg>
-                        <h2 class="service__h2">Cardiology</h2>
-                        <p class="service__p">Our cardiologists are skilled at the diagnosing and treating diseases of the cardiovascular system.</p>
-                    </li> -->
-                </ul>
+                <div class="swipers swiper">
+                    <ul class="service__slaider swiper-wrapper">
+                        <li class="service__list swiper-slide">
+                            <img class="service__img" src="./images/heart.png">
+                            <h2 class="service__h2">Cardiology</h2>
+                            <p class="service__p">Our cardiologists are skilled at the diagnosing and treating diseases of the cardiovascular system.</p>
+                        </li>
+                        <li class="service__list swiper-slide">
+                            <img class="service__img" src="./images/leg.png">
+                            <h2 class="service__h2">Pulmonology</h2>
+                            <p class="service__p">Our Pulmonologist are skilled at diagnosing treating diseases of the Pulmonology system.</p>
+                        </li>
+                        <li class="service__list swiper-slide">
+                            <img class="service__img" src="./images/pigul.png">
+                            <h2 class="service__h2">Medicine</h2>
+                            <p class="service__p">Our medcine doctor are skilled at diagnosing treating diseases of the latest medicne system.</p>
+                        </li>
+                        <li class="service__list swiper-slide">
+                            <img class="service__img" src="./images/heart.png">
+                            <h2 class="service__h2">Cardiology</h2>
+                            <p class="service__p">Our cardiologists are skilled at the diagnosing and treating diseases of the cardiovascular system.</p>
+                        </li>
+                        <li class="service__list swiper-slide">
+                            <img class="service__img" src="./images/pigul.png">
+                            <h2 class="service__h2">Medicine</h2>
+                            <p class="service__p">Our medcine doctor are skilled at diagnosing treating diseases of the latest medicne system.</p>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </section>
 
-        <section class="team">
+        <section class="team" id="team">
         <div class="container">
                 <h2 class="team__our">Meet Our Certified Online Doctors</h2>
                 <p class="team__p">Our online doctors have an average of 15 years experience and a 98% satisfaction rating, they really set us apart!</p>
@@ -301,7 +308,7 @@
         </div>
         </section>
         
-        <section class="apps">  
+        <section class="apps" id="apps">  
             <div class="container">
                 <ul class="apps__ul">
                     <li class="apps__list">
@@ -315,7 +322,7 @@
                         <p class="apps__p">Get on-demand access to a doctor on your phone with the free HealthCare mobile app. Download and register on our app for free and feel safe for all your family</p>
                         <ul class="apps__svg">
                             <li class="apps__li">
-                                <a class="apps__google" href="#"><img class="apps__photo" width="156px" src="./images/Google_Play_Store_badge_EN.svg.png"></a>
+                                <a class="apps__link" href="#"><img class="apps__photo" width="156px" src="./images/Google_Play_Store_badge_EN.svg.png"></a>
                             </li>
                             <li class="apps__li">
                                 <a class="apps__link" href="#"><img class="apps__photo" width="160px" src="./images/Download_on_the_App_Store_Badge.svg.png"></a>
@@ -325,11 +332,105 @@
                 </ul>
             </div>
         </section>
-        <section>
 
+        <section class="comment" id="comment">
+            <div class="container">
+                <div class="flex swiperr swiper">
+                    <div class="swiper-wrapper">
+                        <ul class="comment__ul swiper-slide">
+                            <img class="comment__img" src="/images/com__woman1.png" alt="woman">
+                            <li class="comment__li">
+                                <h2 class="comment__name">Alan Zara dilan</h2>
+                                <img class="comment__star" src="/images/star5.png" alt="star">
+                            </li>
+                            <li class="comment__city">
+                                <p class="comment__blue">New York, America, USA</p>
+                            </li>
+                            <li class="comment__list">
+                                <p class="comment__text">Telehealth is fueled by digital technologies and DocTime telemedicine app has brought a great revolution in medical services specially an overpopulated country where virtual chamber can create at anywhere thoughout country</p>
+                            </li>
+                        </ul>
+                        <ul class="comment__ul swiper-slide">
+                            <img class="comment__img" width="50" src="/images/hero__doc.png" alt="woman">
+                            <li class="comment__li">
+                                <h2 class="comment__name">Alan Zara dilan</h2>
+                                <img class="comment__star" src="/images/star5.png" alt="star">
+                            </li>
+                            <li class="comment__city">
+                                <p class="comment__blue">New York, America, USA</p>
+                            </li>
+                            <li class="comment__list">
+                                <p class="comment__text">Telehealth is fueled by digital technologies and DocTime telemedicine app has brought a great revolution in medical services specially an overpopulated country where virtual chamber can create at anywhere thoughout country</p>
+                            </li>
+                        </ul>
+                        <ul class="comment__ul swiper-slide">
+                            <img class="comment__img" src="/images/com__woman.png" alt="woman">
+                            <li class="comment__li">
+                                <h2 class="comment__name">Alan Zara dilan</h2>
+                                <img class="comment__star" src="/images/star5.png" alt="star">
+                            </li>
+                            <li class="comment__city">
+                                <p class="comment__blue">New York, America, USA</p>
+                            </li>
+                            <li class="comment__list">
+                                <p class="comment__text">Telehealth is fueled by digital technologies and DocTime telemedicine app has brought a great revolution in medical services specially an overpopulated country where virtual chamber can create at anywhere thoughout country</p>
+                            </li>
+                        </ul>
+                        <ul class="comment__ul swiper-slide">
+                            <img class="comment__img" src="/images/com__woman1.png" alt="woman">
+                            <li class="comment__li">
+                                <h2 class="comment__name">Alan Zara dilan</h2>
+                                <img class="comment__star" src="/images/star5.png" alt="star">
+                            </li>
+                            <li class="comment__city">
+                                <p class="comment__blue">New York, America, USA</p>
+                            </li>
+                            <li class="comment__list">
+                                <p class="comment__text">Telehealth is fueled by digital technologies and DocTime telemedicine app has brought a great revolution in medical services specially an overpopulated country where virtual chamber can create at anywhere thoughout country</p>
+                            </li>
+                        </ul>
+                        <ul class="comment__ul swiper-slide">
+                            <img class="comment__img" width="50" src="/images/hero__doc.png" alt="woman">
+                            <li class="comment__li">
+                                <h2 class="comment__name">Alan Zara dilan</h2>
+                                <img class="comment__star" src="/images/star5.png" alt="star">
+                            </li>
+                            <li class="comment__city">
+                                <p class="comment__blue">New York, America, USA</p>
+                            </li>
+                            <li class="comment__list">
+                                <p class="comment__text">Telehealth is fueled by digital technologies and DocTime telemedicine app has brought a great revolution in medical services specially an overpopulated country where virtual chamber can create at anywhere thoughout country</p>
+                            </li>
+                        </ul>
+                        <ul class="comment__ul swiper-slide">
+                            <img class="comment__img" src="/images/com__woman.png" alt="woman">
+                            <li class="comment__li">
+                                <h2 class="comment__name">Alan Zara dilan</h2>
+                                <img class="comment__star" src="/images/star5.png" alt="star">
+                            </li>
+                            <li class="comment__city">
+                                <p class="comment__blue">New York, America, USA</p>
+                            </li>
+                            <li class="comment__list">
+                                <p class="comment__text">Telehealth is fueled by digital technologies and DocTime telemedicine app has brought a great revolution in medical services specially an overpopulated country where virtual chamber can create at anywhere thoughout country</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="button_container">
+                    <div class="button-prev">
+                        <svg class="button__svg" width="30" height="20"><use href="./images/icons.svg#icon-undo2"></use></svg>
+                        <p>back</p>
+                    </div>
+                    <div class="button-next">
+                        <p>next</p>
+                        <svg class="button__svg" width="30" height="20"><use href="./images/icons.svg#icon-redo2"></use></svg>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="time">
+        <section class="time" id="time">
             <div class="container">
                 <ul class="time__ul">
                     <li class="time__paragraf">
@@ -349,13 +450,13 @@
         <div class="footer__flex">
             <ul class="footer__left">
                 <li class="footer__list">
-                    <a class="footer__logo" href="#">HEALTCARE</a>
+                    <a class="footer__logo" href="#header">HEALTCARE</a>
                 </li>
                 <li class="footer__nav">
-                    <nav class="footer__nav" href="#">Metairie, 3689 Bassel Street, LA, Louisiana</nav>
+                    <a class="footer__nav" href="#">Metairie, 3689 Bassel Street, LA, Louisiana</a  >
                 </li>
                 <li class="footer__nav">
-                    <nav class="footer__nav" href="#">Contact us: 225-788-5489</nav>
+                    <a class="footer__nav" href="#">Contact us: 225-788-5489</a>
                 </li>
             
                 <ul class="footer__ul">
@@ -382,11 +483,11 @@
                     <h2 class="footer__title">Category</h2>
                 </li>
                 <li class="footer__li">
-                    <a class="footer__p" href="#">Home</a>
-                    <a class="footer__p" href="#">About</a>
-                    <a class="footer__p" href="#">Services</a>
-                    <a class="footer__p" href="#">Reviews</a>
-                    <a class="footer__p" href="#">Article</a>
+                    <a class="footer__a" href="#">About</a>
+                    <a class="footer__a" href="#">Home</a>
+                    <a class="footer__a" href="#">Services</a>
+                    <a class="footer__a" href="#">Reviews</a>
+                    <a class="footer__a" href="#">Article</a>
                 </li>
             </ul>
             <ul class="footer__center right">
@@ -394,22 +495,23 @@
                     <h2 class="footer__title">About</h2>
                 </li>
                 <li class="footer__li">
-                    <a class="footer__p" href="#">Partners</a>
-                    <a class="footer__p" href="#">Careers</a>
-                    <a class="footer__p" href="#">Press</a>
-                    <a class="footer__p" href="#">Community</a>
+                    <a class="footer__a" href="#">Partners</a>
+                    <a class="footer__a" href="#">Careers</a>
+                    <a class="footer__a" href="#">Press</a>
+                    <a class="footer__a" href="#">Community</a>
                 </li>
             </ul>
             <ul class="footer__right">
                 <li class="footer__list">
                     <h2 class="footer__title">Subscribe newsletter</h2>
                     <p class="footer__sub">Sign up for tips, new destinations, and exclusive promos.</p>
-                    <input class="footer__input" placeholder="Enter your email">
-                    <button class="footer__button">Subcribe</button>
+                    <form>
+                        <input class="footer__input" type="email" placeholder="Enter your email">
+                        <button class="footer__button" type="submit">Subcribe</button>
+                    </form>
                 </li>
             </ul>
-        </div>
-        
+        </div> 
     </div>
 </footer>
 <div class="container">
@@ -433,7 +535,7 @@
             </svg>
         </button>
         <h3 class="modal__title">Leave your data for further communication</h3>
-            <form class="modal__form">
+            <form class="modal__form" id="subscribe">
                 <ul class="modal__ul">
                     <li class="modal__li">
                         <label class="modal__lable" for="name" id="name">Name</label>
@@ -469,6 +571,10 @@
             </form>
     </div>
 </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/swiper.js"></script>
+
 </body>
 </html>

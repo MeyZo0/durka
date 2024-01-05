@@ -2,6 +2,7 @@
     display: flex;
     margin-top: 170px;
     margin-bottom: 72px;
+    background: linear-gradient(LightCyan,Snow, LightCyan);
     &__logo{
         max-width: 660px;
         margin-bottom: 31px;
@@ -33,6 +34,7 @@
         margin-bottom: 50px;
     }
     &__button{
+        border: 1px solid #40A3F8;
         border-radius: 4px;
         background: #40A3F8;
         color: $color_4;
@@ -43,27 +45,40 @@
         letter-spacing: 0.96px;
         cursor: pointer;
         padding: 10px 24px;
+        transition: 200ms;
         &:hover {
-            background: #188CE8;
-            transition: 300ms;
+            background: white;
+            color: #40A3F8;
+            border: 1px solid #40A3F8;
+            transition: 200ms;
         }
         &:focus {
-            background: #188CE8;
-            transition: 300ms;
+            background: white;
+            color: #40A3F8;
+            border: 1px solid #40A3F8;
+            transition: 200ms;
 	}
     }
     &__ul{
         display: flex;
     }
+    &__img{
+        position: inherit;
+        z-index: 1;
+    }
+    &__back{
+        position: absolute;
+        top: -70px;
+        right: 20px;
+        z-index: 0;
+    }
     &__pos{
         position: relative;
-        background-image: url(/images/back_шлюха.png);
-        background-repeat: no-repeat;
     }
     &__svg1{
         position: absolute;
-        right: 500px;
-        top: 50px;
+        right: 475px;
+        top: 0;
         background-color: white;
         border-radius: 50%;
         padding: 10px;
@@ -73,15 +88,15 @@
         position: absolute;
         background-color: white;
         top: 200px;
-        right: 600px;
+        right: 540px;
         border-radius: 50%;
         padding: 10px;
         box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.05);
     }
     &__svg3{
         position: absolute;
-        top: 50px;
-        right: 20px;
+        top: 0;
+        right: 65px;
         background-color: white;
         border-radius: 50%;
         padding: 10px;
@@ -95,9 +110,42 @@
         padding: 10px 20px;
         border-radius: 10px;
         gap: 10px;
-        bottom: 100px;
+        bottom: 60px;
+        left: 110px;
+        z-index: 2;
     }
     &__pictures:not(:last-child){
         margin-bottom: 8px;
+    }
+    &__ulheart{
+        position: absolute;
+        right: 0;
+        top: 270px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px 26px;
+        z-index: 2;
+    }
+    &__imgheart{
+        margin-left: 30px;
+    }
+    &__pheart{
+        color: rgba(61, 61, 63, 0.56);
+        font-family: 'Poppins',sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.28px;
+    }
+    &__para{
+        color: #3D3D3F;
+        font-family: 'Poppins',sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.48px;
+        text-align: center;
     }
 }

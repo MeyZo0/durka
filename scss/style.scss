@@ -1,5 +1,6 @@
 @import "./modern-normalize.css";
 @import "./warp.scss";
+@import "./mixin.scss";
 @import "./main/modal.scss";
 @import "./container.scss";
 @import "./main/header.scss";
@@ -9,6 +10,7 @@
 @import "./main/specialist.scss";
 @import "./main/team.scss";
 @import "./main/apps.scss";
+@import "./main/comment.scss";
 @import "./main/time.scss";
 @import "./main/footer.scss";
 
@@ -34,6 +36,9 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+button{
+	border: none;
+}
 .body{
     background: linear-gradient(LightCyan,Snow,LightCyan ,Snow, LightCyan);
 }
@@ -42,6 +47,56 @@ img {
 	justify-content: space-between;
 	margin: 0 auto;
 	gap: 30px;
+	min-width: 0;
+}
+.swiper{
+	background-color: transparent;
+}
+.button_container{
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 10px;
+}
+.swiper-wrapper{
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+}
+.button-next{
+	border: 1px solid transparent; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #1DA1F2;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 300ms;
+	&:hover{
+		background-color: white;
+		color: #1DA1F2;
+		transition: 300ms;
+		border: 1px solid #1DA1F2;
+	}
+}
+.button-prev{
+	border: 1px solid transparent; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #1DA1F2;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 300ms;
+	&:hover{
+		background-color: white;
+		color: #1DA1F2;
+		transition: 300ms;
+		border: 1px solid #1DA1F2;
+	}
 }
 .search{
     background-color: rgba(56, 175, 255, 0.10);
@@ -111,4 +166,6 @@ input[type="checkbox"] {
 		}
 	}
 }
-
+html{
+	scroll-behavior: smooth;
+}

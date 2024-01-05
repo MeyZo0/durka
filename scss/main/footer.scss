@@ -2,7 +2,7 @@
     background-color: white;
     &__flex{
         padding-top: 34px;
-        padding-bottom: 54px;
+        padding-bottom: 30px;
         display: flex;
         justify-content: center;
     }
@@ -64,24 +64,42 @@
         font-style: normal;
         font-weight: 400;
         line-height: 100%;
-        &:not(:last-child){
-            margin-bottom: 16px;
-        }
+        transition: 200ms;
+            &:hover{
+                color: #40A3F8;
+                transition: 200ms;
+            }
+            &:focus{
+                color: #40A3F8;
+                transition: 200ms;
+            }
+            &:not(:last-child){
+                margin-bottom: 16px;
+            }
     }
     &__li{
-        
+        max-width: 140px;
         display: flex;
         flex-wrap: wrap;
     }
-    &__p{
+    &__a{
         color: #646464;
         font-family: 'Roboto',sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 100%;
+        transition: 200ms;
             &:not(:last-child){
                 margin-bottom: 24px;
+            }
+            &:hover{
+                color: #40A3F8;
+                transition: 200ms;
+            }
+            &:focus{
+                color: #40A3F8;
+                transition: 200ms;
             }
     }
     &__sub{
@@ -102,7 +120,7 @@
         padding-top: 12px;
         padding-bottom: 12px;
         padding-left: 24px;
-        padding-right: 100px;
+        padding-right: 93px;
         margin-bottom: 12px;
         &:focus{
             outline: 1px solid #E1E2E4;
@@ -112,6 +130,7 @@
         }
     }
     &__button{
+        border: 1px solid #40A3F8;
         color: #FFF;
         font-family: 'Roboto',sans-serif;
         font-size: 14px;
@@ -119,11 +138,18 @@
         font-weight: 500;
         line-height: normal;
         letter-spacing: 0.28px;
-
+        cursor: pointer;
         background-color: #40A3F8;
         border-radius: 5px;
         border: 1.1px solid #E1E2E4;
         padding: 12px 115px;
+        transition: 200ms;
+            &:hover{
+                background-color: white;
+                color: #40A3F8;
+                transition: 200ms;
+                border: 1px solid #40A3F8;
+            }
     }
     &__bottom{
         display: flex;
