@@ -15,7 +15,6 @@ const swiper = new Swiper('.swipers', {
 
   const swiperr = new Swiper('.swiperr', {
     slidesPerView: 1,
-    loop: true,
     speed: 500,
     navigation: {
         nextEl: '.button-next',

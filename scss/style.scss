@@ -40,6 +40,7 @@ button{
 	border: none;
 }
 .body{
+	margin: 0;
     background: linear-gradient(LightCyan,Snow,LightCyan ,Snow, LightCyan);
 }
 .flex{
@@ -48,6 +49,14 @@ button{
 	margin: 0 auto;
 	gap: 30px;
 	min-width: 0;
+	@include tablet{
+		flex-wrap: wrap;
+		justify-content: center
+	}
+	@include mobile{
+		flex-wrap: wrap;
+		justify-content: center
+	}
 }
 .swiper{
 	background-color: transparent;
@@ -116,12 +125,7 @@ button{
 .linkedin{
     background-color: #0077B5;
 }
-.left{
-    margin-right: 114px;
-}
-.right{
-    margin-right: 152px;
-}
+
 .input__comment {
 	resize: none;
 	font-family: $font-family_4;
@@ -147,18 +151,21 @@ button{
 }
 input[type="checkbox"] {
 	appearance: none;
-	border: #2F303A 1px solid;
+	border: black 1px solid;
 	height: 15px;
 	width: 16px;
 	border-radius: 2px;
 	transition-duration: 0.3s;
+	@include mobile{
+		min-width: 16px;
+	}
 	&:checked {
-		background: $background-color_2;
+		background: white;
 		border: none;
-		color: $color_4;
+		color: #40A3F8;
 		&::before {
 			content: "✔";
-			color: white;
+			color: #40A3F8;
 			margin-left: 3px;
 			display: flex;
 			margin-top: -2px;

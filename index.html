@@ -38,6 +38,33 @@
                     </li>
                 </ul>
             </nav>
+
+            <button class="mobile__button" type="button" data-menu-button aria-expanded="false">
+                <svg class="mobile__button-close" width="19" height="19">
+                  <use href="./images/icons.svg#menu_close"></use>
+                </svg>
+                <svg class="mobile__button-open" width="24" height="16">
+                  <use href="./images/icons.svg#icon_menu"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="mobile no-scroll" data-menu>
+              <nav class="mobile__nav">
+                <ul class="mobile__nav-list">
+                  <li class="mobile__nav-item">
+                    <a href="#" class="mobile__nav-link">Home</a>
+                  </li>
+                  <li class="mobile__nav-item">
+                    <a href="#specialist" class="mobile__nav-link">About</a>
+                  </li>
+                  <li class="mobile__nav-item">
+                    <a href="#comment" class="mobile__nav-link">Article</a>
+                  </li>
+                  <li class="mobile__nav-item">
+                    <a href="#service" class="mobile__nav-link">Services</a>
+                  </li>
+                </ul>
+              </nav>
         </div>
     </header>
     <main>
@@ -53,7 +80,7 @@
                     <li class="hero__list">
                         <div class="hero__pos">
                             <img class="hero__img" width="1000" src="./images/hero__woman.png">
-                            <img class="hero__back" width="550" src="/images/back_шлюха.png" alt="2">
+                            <img class="hero__back" width="550" src="/images/back_colo.png" alt="2">
                             <img class="hero__svg1" width="60" src="./images/ALO.png">
                             <img class="hero__svg2" width="60" src="./images/mes.png">
                             <img class="hero__svg3" width="60" src="./images/video-camera.png">
@@ -311,10 +338,9 @@
         <section class="apps" id="apps">  
             <div class="container">
                 <ul class="apps__ul">
-                    <li class="apps__list">
+                    <li class="apps__list-left">
                         <div class="apps__pictures">
-                            <img class="apps__img" width="1800" src="./images/iphone12.png" alt="123">
-                            <img class="apps__imeg" width="156" src="./images/Home 1.png" alt="">
+                            <img class="apps__img" width="1800" src="./images/Mockup.png" alt="123">
                         </div>
                     </li>
                     <li class="apps__list">
@@ -402,19 +428,6 @@
                                 <p class="comment__text">Telehealth is fueled by digital technologies and DocTime telemedicine app has brought a great revolution in medical services specially an overpopulated country where virtual chamber can create at anywhere thoughout country</p>
                             </li>
                         </ul>
-                        <ul class="comment__ul swiper-slide">
-                            <img class="comment__img" src="/images/com__woman.png" alt="woman">
-                            <li class="comment__li">
-                                <h2 class="comment__name">Alan Zara dilan</h2>
-                                <img class="comment__star" src="/images/star5.png" alt="star">
-                            </li>
-                            <li class="comment__city">
-                                <p class="comment__blue">New York, America, USA</p>
-                            </li>
-                            <li class="comment__list">
-                                <p class="comment__text">Telehealth is fueled by digital technologies and DocTime telemedicine app has brought a great revolution in medical services specially an overpopulated country where virtual chamber can create at anywhere thoughout country</p>
-                            </li>
-                        </ul>
                     </div>
                 </div>
                 <div class="button_container">
@@ -478,29 +491,29 @@
                     </li>
                 </ul>
             </ul>
-            <ul class="footer__center left">
-                <li class="footer__list">
-                    <h2 class="footer__title">Category</h2>
-                </li>
-                <li class="footer__li">
-                    <a class="footer__a" href="#">About</a>
-                    <a class="footer__a" href="#">Home</a>
-                    <a class="footer__a" href="#">Services</a>
-                    <a class="footer__a" href="#">Reviews</a>
-                    <a class="footer__a" href="#">Article</a>
-                </li>
-            </ul>
-            <ul class="footer__center right">
-                <li class="footer__list">
-                    <h2 class="footer__title">About</h2>
-                </li>
-                <li class="footer__li">
-                    <a class="footer__a" href="#">Partners</a>
-                    <a class="footer__a" href="#">Careers</a>
-                    <a class="footer__a" href="#">Press</a>
-                    <a class="footer__a" href="#">Community</a>
-                </li>
-            </ul>
+                <ul class="footer__center">
+                    <li class="footer__list">
+                        <h2 class="footer__title">Category</h2>
+                    </li>
+                    <li class="footer__li">
+                        <a class="footer__a" href="#">About</a>
+                        <a class="footer__a" href="#">Home</a>
+                        <a class="footer__a" href="#">Services</a>
+                        <a class="footer__a" href="#">Reviews</a>
+                        <a class="footer__a" href="#">Article</a>
+                    </li>
+                </ul>
+                <ul class="footer__center">
+                    <li class="footer__list">
+                        <h2 class="footer__title">About</h2>
+                    </li>
+                    <li class="footer__li">
+                        <a class="footer__a" href="#">Partners</a>
+                        <a class="footer__a" href="#">Careers</a>
+                        <a class="footer__a" href="#">Press</a>
+                        <a class="footer__a" href="#">Community</a>
+                    </li>
+                </ul>
             <ul class="footer__right">
                 <li class="footer__list">
                     <h2 class="footer__title">Subscribe newsletter</h2>
@@ -530,27 +543,22 @@
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="modal__close" data-modal-close>
-            <svg class="modal__close-icon">
-                <use href="./images/icons.svg#close"></use>
-            </svg>
+            <svg class="modal__close-icon"><use href="./images/icons.svg#close"></use></svg>
         </button>
         <h3 class="modal__title">Leave your data for further communication</h3>
             <form class="modal__form" id="subscribe">
                 <ul class="modal__ul">
                     <li class="modal__li">
                         <label class="modal__lable" for="name" id="name">Name</label>
-                        <input class="modal__input" id="name" type="text" name="login" required placeholder=""> <svg class="modal__icon"><use href="./images/icons.svg#icon_name"></use>
-                        </svg>
+                        <input class="modal__input" id="name" type="text" name="login" required placeholder="">
                     </li>
                     <li class="modal__li">
                         <label class="modal__lable" for="phone">Number</label>
-                        <input class="modal__input" id="phone" for="phone" type="text" name="phone" required placeholder=""> <svg class="modal__icon"><use href="./images/icons.svg#icon_number"></use>
-                        </svg>
+                        <input class="modal__input" id="phone" for="phone" type="text" name="phone" required placeholder="">
                     </li>
                     <li class="modal__li">
-                        <label class="modal__lable" for="email" id="email">email</label>
-                        <input class="modal__input" id="email" type="email" name="email" required placeholder=""> <svg class="modal__icon"><use href="./images/icons.svg#icon_mail"></use>
-                        </svg>
+                        <label class="modal__lable" for="email" id="email">Email</label>
+                        <input class="modal__input" id="email" type="email" name="email" required placeholder="">
                     </li>
                     <li class="modal__li">
                         <label class="modal__lable" id="comment">Additional Information</label>
@@ -575,6 +583,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/burger.js"></script>
 
 </body>
 </html>

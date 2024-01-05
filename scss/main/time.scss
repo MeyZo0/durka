@@ -12,6 +12,11 @@
     &__back{
         width: auto;
     }
+    &__paragraf{
+        @include mobile{
+            padding: 40px;
+        }
+    }
     &__title{
         max-width: 400px;
         color: #FFF;
@@ -23,6 +28,10 @@
         text-transform: capitalize;
         margin-left: 100px;
         margin-bottom: 20px;
+        @include mobile{
+            margin: 0;
+            margin-bottom: 20px;
+        }
     }
     &__button{
         border: 1px solid #40A3F8;
@@ -50,5 +59,13 @@
                 border: 1px solid white;
                 transition: 200ms;
             }
+            @include mobile{
+                margin: 0;
+            }
+    }
+    &__foto{
+        @include mobile{
+            display: none;
+        }
     }
 }

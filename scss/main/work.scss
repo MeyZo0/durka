@@ -1,7 +1,12 @@
 .work{
     background-color: #ABD8FF, #71FFDDA6;
     text-align: left;
-    margin-bottom: 71px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    @include tablet{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
     &__title{
         color: #3E3E3E;
         font-family: 'Roboto', sans-serif;
@@ -14,7 +19,11 @@
     }
     &__ul{
         display: flex;
-        gap: 105px
+        gap: 105px;
+        @include mobile{
+            flex-wrap: wrap;
+            gap: 30px;
+        }
     }
     &__list{
         text-align: center;
@@ -26,6 +35,11 @@
         font-style: normal;
         font-weight: 500;
         line-height: 160%;
+        margin-bottom: 15px;
+        @include tablet{
+            text-wrap: nowrap;
+            margin-bottom: 10px;
+        }
     }
     &__p{
         color: rgba(0, 0, 0, 0.50);
@@ -35,11 +49,13 @@
         font-style: normal;
         font-weight: 400;
         line-height: 166.667%;
+        @include tablet{
+            max-width: 200px;
+        }
     }
     &__img{
         display: flex;
         justify-content: center;
-        
     }
     &__pictures{
         display: flex;

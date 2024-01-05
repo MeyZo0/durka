@@ -12,7 +12,14 @@
         height: 118px;
         flex-shrink: 0;;
         margin-bottom: 30px;
-        margin-top: 150px;
+        @include tablet{
+            font-size: 34px;
+            margin-bottom: 100px;
+        }
+        @include mobile{
+            font-size: 35px;
+            margin-bottom: 70px;
+        }
     }
     &__p{
         color: rgba(61, 61, 63, 0.70);
@@ -23,6 +30,14 @@
         line-height: 166.667%;
         letter-spacing: 0.36px;
         margin-bottom: 30px;
+        @include tablet{
+            font-size: 15px;
+        }
+    }
+    &__list-left{
+        @include mobile{
+            display: none;
+        }
     }
     &__ul{
         display: flex;
@@ -35,10 +50,17 @@
     &__pictures{
         position: relative;
     }
+    &__img{
+    }
     &__imeg{
         position: absolute;
         left: 218px;
         bottom: 150px;
+        @include tablet{
+            width: 115px;
+            left: 165px;
+            bottom: 118px;
+        }
     }
     &__link{
         opacity: 0.6;
